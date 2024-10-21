@@ -1,0 +1,21 @@
+package:
+  name: fairseq
+  version: "0.12.3" # You can specify the version you want to package
+
+source:
+  git_url: https://github.com/pytorch/fairseq.git
+  git_rev: 3f6ba43 # The specific commit you want
+
+requirements:
+  host:
+    - python
+    - setuptools
+  run:
+    - python
+    - pytorch
+    - torchvision
+    - torchaudio
+    - cudatoolkit
+
+build:
+  script: python setup.py install

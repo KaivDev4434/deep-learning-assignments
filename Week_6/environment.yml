@@ -1,0 +1,26 @@
+name: lang_trans
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.12
+  - pytorch
+  - pandas
+  - torchvision
+  - torchaudio
+  - cudatoolkit
+  - pip
+  - git
+  - fairseq==0.12.3
+  - matplotlib
+  - editdistance
+  - sacrebleu
+  - sacremoses
+  - sentencepiece
+  - tqdm
+  - wandb
+
+variables:
+  CUDA_HOME: $CONDA_PREFIX
